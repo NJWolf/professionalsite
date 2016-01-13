@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
 </head>
-<body>
+<body  id="page-top" class="index">
     <header>
         <div class="container">
             <div class="intro-text">
@@ -17,9 +17,16 @@
                     Welcome To Nick Wolf site!
                 </div>
                 <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">About Me</a>
+                <a href="#about" class="page-scroll btn btn-xl">About Me</a>
             </div>
         </div>
     </header>
+
+    @Html.Partial("_AboutPartial")
+
+    @Html.Partial("_ResumePartial")
+
+    @Html.Partial("_ContactPartial")
+
 </body>
 </html>
