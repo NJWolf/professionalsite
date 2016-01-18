@@ -13,5 +13,10 @@ namespace NickWolf.Web.Controllers
         {
             return View();
         }
+        //GET: Pdf
+        public FileResult DisplayPDF()
+        {
+            return File("~/Content/files/resume.pdf", "application/pdf");
+        }
     }
 }
